@@ -74,7 +74,7 @@ for i in range(row):
 for k in range(len(label_dict)):
 	for i in range(row):
 	    for j in range(column):
-	        if label_dict.has_key(new_img[i][j]):
+	        if new_img[i][j] in label_dict:
 	            new_img[i][j] = label_dict[new_img[i][j]]
 
 
